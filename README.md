@@ -11,7 +11,7 @@ Since NKI empowers users with interfaces for low-level control of the hardware, 
 kernels requires a substantial understanding of the underlying hardware architecture. 
 NKI Synthesizer (NKS) insultes NKI users from low-level architectural details by automatically synthesizing instructions
 for data layout transformations, data broadcasting, reduction and scanning patterns, while accounting for data layout and shape
-constraints imposed by the on-chip compute engines.
+constraints imposed by the on-chip compute engines. 
 
 
 
@@ -22,6 +22,8 @@ constraints imposed by the on-chip compute engines.
 Install [Python](https://www.python.org/downloads/) > 3.0.
 
 ### Rosette
+
+We use Rosette for performing program synthesis and verification of equivalence between given programs.
 
 The easiest way to install Rosette is from Racket's package manager:
 
@@ -52,6 +54,9 @@ Alternatively, you can install Rosette from source:
 
 ### Egglog
 
+We use Egglog to perform [equality saturation](https://dl.acm.org/doi/abs/10.1145/3591239) to support simplification of
+algebraic expressions using rewrites.
+
 Install [Egglog](https://egglog-python.readthedocs.io/latest/):
 
   `$ pip install egglog`
@@ -64,6 +69,10 @@ Alternatively, you can install Egglog from source:
 
   `$ https://github.com/egraphs-good/egglog-python`
 
+
+## Documentation
+
+Coming soon!
 
 ## Security
 
