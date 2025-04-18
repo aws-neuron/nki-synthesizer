@@ -1,12 +1,17 @@
 ## NKI Synthesizer (NKS)
 
-TODO: Fill this README out!
+[NKI](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/nki) is a Python-based bare-metal
+programming language that enables users to implement efficient custom deep learning kernels and libraries for ML chips including AWS Trainium and Inferentia.
+NKI provides users with direct access to the [Instruction Set Architecture](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/nki/api/nki.isa.html)
+of the ML chips through tile-based interfaces expressed in Python.
+NKI allows the use of NumPy syntax for basic and advanced indexing into tensors.
+It offers tensor printing support, standard error messaging, and built-in kernel simulation capabilities for efficient debugging purposes. 
 
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
-
+Since NKI empowers users with interfaces for low-level control of the hardware, writing high-performance NKI
+kernels requires a substantial understanding of the underlying hardware architecture. 
+NKI Synthesizer (NKS) insultes NKI users from low-level architectural details by automatically synthesizing instructions
+for data layout transformations, data broadcasting, reduction and scanning patterns, while accounting for data layout and shape
+constraints imposed by the on-chip compute engines.
 
 
 
