@@ -13,7 +13,8 @@ Be sure to:
 ## Prerequisites
 
 ### Python
-- Install [Python](https://www.python.org/downloads/) > 3.0.
+
+Install [Python](https://www.python.org/downloads/) > 3.0.
 
 ### Rosette
 
@@ -43,6 +44,20 @@ Alternatively, you can install Rosette from source:
 
   `$ cd rosette`  
   `$ raco pkg install`  
+
+### Egglog
+
+Install [Egglog](https://egglog-python.readthedocs.io/latest/):
+
+  `$ pip install egglog`
+
+#### Installing from source
+
+Alternatively, you can install Egglog from source:
+
+* Clone the egglog-python repository:
+
+  `$ https://github.com/egraphs-good/egglog-python`
 
 
 ## Security
