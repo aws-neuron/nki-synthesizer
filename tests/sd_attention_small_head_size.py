@@ -8,7 +8,7 @@ kernels - Fused self SD attention with small head size
 from nks_lang import *
 
 
-@spec
+@nks.spec
 def fused_self_attn_for_SD_small_head_size(q_ref, k_ref, v_ref):
     k_t = torch.transpose(k_ref)
     v_t = torch.transpose(v_ref)
@@ -20,7 +20,7 @@ def fused_self_attn_for_SD_small_head_size(q_ref, k_ref, v_ref):
     return res
 
 
-@sketch
+@nks.sketch
 def fused_self_attn_for_SD_small_head_size(q_ref, k_ref, v_ref):
   pe_in_dt = np.float32
   assert q_ref.dtype == k_ref.dtype == v_ref.dtype
